@@ -1,0 +1,13 @@
+# Interval (in seconds) at which announcements are sent to players.
+interval: 60
+
+# Enable this setting for announcements to be sent in a random order.
+random: false
+
+# List of announcements to be broadcasted in-game. Each announcement is formatted using JSON, similar to the /tellraw
+# command. You can specify multiple lines in an announcement by using the "\n" character.
+messages: |
+  [
+    {"text": "Hello, world!", "color": "blue"},
+    {"text": "Don't forget to vote!\nVisit our website for more info.", "color": "green"}
+  ]

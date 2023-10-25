@@ -1,0 +1,20 @@
+name: YetAnotherAutoAnnouncer
+version: '${version}'
+main: me.coopersully.yaaa.YetAnotherAutoAnnouncer
+api-version: '1.20'
+
+commands:
+  yaaa:
+    description: The base command for Y.A.A.A..
+    usage: /<command>
+  yaaa reload:
+    description: Reloads the plugin's configurations.
+    usage: /<command>
+    aliases: [ "reloadconfig", "rel", "r" ]
+  yaaa next:
+    description: Tells you when the next announcement will be.
+    usage: /<command>
+  yaaa messages:
+    description: Shows all messages in the config.
+    usage: /<command>
+    aliases: [ "list", "message", "msgs", "msg" ]
