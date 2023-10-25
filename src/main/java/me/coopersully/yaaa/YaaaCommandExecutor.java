@@ -28,6 +28,11 @@ public class YaaaCommandExecutor implements CommandExecutor {
             return true;
         }
 
+        if (!sender.hasPermission("yaaa.admin")) {
+            YetAnotherAutoAnnouncer.sendError(sender, "You don't have permission to do that, little man.");
+            return true;
+        }
+
         return switch (args[0].toLowerCase()) {
             case "reloadconfig", "reload", "rel", "r" -> handleReload(sender);
             case "next" -> handleNext(sender);
