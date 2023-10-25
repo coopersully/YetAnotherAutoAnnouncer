@@ -46,6 +46,7 @@ public class YaaaCommandExecutor implements CommandExecutor {
 
     private boolean handleReload(CommandSender sender) {
         plugin.reloadConfig();
+        announcer.reload();
         YetAnotherAutoAnnouncer.sendInfo(sender, "Plugin configuration reloaded.");
         return true;
     }

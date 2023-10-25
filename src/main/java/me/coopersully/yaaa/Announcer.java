@@ -33,6 +33,11 @@ public class Announcer implements Runnable {
         return this.interval;
     }
 
+    public void reload() {
+        messages.clear();
+        loadMessages();
+    }
+
     private void loadMessages() {
         try {
             JSONParser parser = new JSONParser();
