@@ -4,7 +4,6 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.Style;
 import org.bukkit.Bukkit;
-import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -20,7 +19,7 @@ public class YetAnotherAutoAnnouncer extends JavaPlugin implements CommandExecut
     public void onEnable() {
         saveDefaultConfig();
         Announcer announcer = new Announcer(this);
-        Bukkit.getScheduler().scheduleSyncRepeatingTask(this, announcer, 0L, getConfig().getLong("interval") * 20);
+        Bukkit.getScheduler().scheduleSyncRepeatingTask(this, announcer, 0L, announcer.getInterval());
 
         // Register commands
         getCommand("yaaa").setExecutor(new YaaaCommandExecutor(announcer, this));

@@ -29,6 +29,10 @@ public class Announcer implements Runnable {
         loadMessages();
     }
 
+    public long getInterval() {
+        return this.interval;
+    }
+
     private void loadMessages() {
         try {
             JSONParser parser = new JSONParser();
