@@ -20,6 +20,11 @@ announcement will be broadcasted, and view all messages or a specific message fr
 issues encountered while loading messages are logged and saved for easy troubleshooting. Through a simple setup process, Y.A.A.A. 
 provides a straightforward way to keep players informed and engaged with server updates, rules, or any other important information.
 
+## Permissions
+There's just one, so don't wear it out! That doesn't make sense, just go with it.
+
+- ``yaaa.admin`` - Grants access to every plugin-related command.
+
 ## F.A.Q.
 ### I don't know how to format my announcements!
 Use a tellraw-generator like [this one](https://www.minecraftjson.com/), and just slice off the command prefix and use the data in brackets. That will work just fine.
@@ -32,6 +37,9 @@ Sure can. Do something like this:
 
 ### Can I add permissions?
 No.
+
+### I'm an admin and can't do anything!
+Make sure your admins have the permission ``yaaa.admin`` to be able to perform any commands concerning the plugin.
 
 ### Does this plugin work with \<other plugin\>?
 Short answer? Probably. I can't test it against every plugin out there, but the plugin is extremely light-weight and shouldn't step on any toes.
